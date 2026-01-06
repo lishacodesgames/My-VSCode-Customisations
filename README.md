@@ -4,4 +4,5 @@ All the custom files, extensions, settings, changes, themes, I have in my VSCode
 <ul>
 <li> <a href = settings.json> SETTINGS.JSON </a> </li>
 <li> <a href = cpp.json> CPP.JSON </a> </li>
+<li> <a href = WindowsPowershellCommands.ps1> POWERSHELL COMMANDS </a> </li>
 </ul>
