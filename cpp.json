@@ -1,0 +1,26 @@
+{
+  "C++ Main Skeleton": {
+    "prefix": "cppboiler",
+    "body": [
+      "#include <iostream>",
+      "using namespace std;",
+      "void clrscr() {",
+      " #if defined(_WIN32)",
+      "   system(\"cls\");",
+      " #elif defined(__APPLE__)",
+      "   cout<<\"\\033c\";",
+      " #endif",
+      "}",
+      "",
+      "int main() {",
+      " clrscr();",
+      " ",
+      " $0",
+      " ",
+      " cout<<'\\n';",
+      " return 0;",
+      "}"
+    ],
+    "description": "C++ boilerplate code"
+  }
+}
