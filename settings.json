@@ -23,6 +23,7 @@
      "terminal.ansiMagenta": "#93bfc5",
      "terminal.ansiCyan": "#497070"
    },
+  "terminal.integrated.stickyScroll.enabled": false,
    // c++ format 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.vcFormat.indent.preserveComments": true,
@@ -141,5 +142,24 @@
       "backgroundColor": "transparent",
       "italic": true
     }
-  ]
+  ],
+  // extension: indent-rainbow
+  "indentRainbow.colors": [
+    "rgba(234, 105, 139,0.15)",
+    "rgba(213, 93, 146,0.15)",
+    "rgba(192, 82, 153, 0.15)",
+    "rgba(172, 70, 161,0.15)",
+    "rgba(151, 58, 168,0.15)",
+    "rgba(130, 47, 175,0.15)",
+    "rgba(130, 47, 175,0.1)",
+    "rgba(130, 47, 175,0.05)",
+    "rgba(130, 47, 175,0.025)"
+  ],
+  // extension: colorize
+  "colorize.languages": [
+    "css",
+    "json",
+    "cpp"
+  ],
+  "colorize.hide_current_line_decorations": false
 }
