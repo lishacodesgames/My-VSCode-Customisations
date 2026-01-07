@@ -49,6 +49,10 @@
     <td> ecmel </td>
   </tr>
   <tr>
+    <td> indent-rainbow </td>
+    <td> oderwat </td>
+  </tr>
+  <tr>
     <td> Live Preview </td>
     <td> Microsoft </td>
   </tr>
