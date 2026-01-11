@@ -1,36 +1,36 @@
 {
    // autosave
-   "files.autoSave": "afterDelay",
+  "files.autoSave": "afterDelay",
    // chat
-   "chat.agent.enabled": false,
-   "chat.commandCenter.enabled": false,
-   "chat.notifyWindowOnConfirmation": false,
-   "github.copilot.enable": {
-     "*": true,
-     "plaintext": false,
-     "markdown": false,
-     "scminput": false,
-     "cpp": false
-   },
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "chat.notifyWindowOnConfirmation": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "cpp": false
+  },
    // debug
-   "debug.onTaskErrors": "debugAnyway",
+  "debug.onTaskErrors": "debugAnyway",
    // terminal
-   "terminal.integrated.minimumContrastRatio": 1,
-   "workbench.colorCustomizations": {
-     "terminal.foreground": "#33827a",
-     "terminal.ansiBrightYellow": "#3d5a4c",
-     "terminal.ansiBrightRed": "#c43030",
-     "terminal.ansiMagenta": "#93bfc5",
-     "terminal.ansiCyan": "#497070"
-   },
+  "terminal.integrated.minimumContrastRatio": 1,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#33827a",
+    "terminal.ansiBrightYellow": "#3d5a4c",
+    "terminal.ansiBrightRed": "#c43030",
+    "terminal.ansiMagenta": "#93bfc5",
+    "terminal.ansiCyan": "#497070"
+  },
   "terminal.integrated.stickyScroll.enabled": false,
    // c++ format 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.vcFormat.indent.preserveComments": true,
-  // code runner
+   // code runner
   "code-runner.runInTerminal": true,
   "code-runner.customCommand": "clang++ snake1.cpp -L lib/ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL lib/libraylib.a -o snake1 && ./snake1",
-  // vscode appearance
+   // vscode appearance
   "editor.accessibilitySupport": "on",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -145,16 +145,17 @@
   ],
   // extension: indent-rainbow
   "indentRainbow.colors": [
-    "rgba(234, 105, 139,0.15)",
-    "rgba(213, 93, 146,0.15)",
-    "rgba(192, 82, 153, 0.15)",
-    "rgba(172, 70, 161,0.15)",
-    "rgba(151, 58, 168,0.15)",
-    "rgba(130, 47, 175,0.15)",
-    "rgba(130, 47, 175,0.1)",
-    "rgba(130, 47, 175,0.05)",
-    "rgba(130, 47, 175,0.025)"
+    "#82AAFF66",
+    "#C792EA66",
+    "#F78C6C61",
+    "#FFCB6B61",
+    "#C3E88D66",
+    "#89DDFF66"
   ],
+  "indentRainbow.errorColor": "#00000022",
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1.25,
+  "indentRainbow.ignoreErrorLanguages": ["markdown"],
   // extension: colorize
   "colorize.languages": [
     "css",
