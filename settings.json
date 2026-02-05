@@ -38,7 +38,7 @@
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
   "editor.minimap.size": "fit",
   "editor.renderLineHighlight": "all",
-  "editor.tabSize": 2,
+  "editor.tabSize": 3,
   "editor.wordWrap": "on",
   "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
