@@ -17,8 +17,12 @@
     <td> Aaron Bond </td>
   </tr>
   <tr>
-    <td> C/C++ & Extension Pack</td> 
+    <td> C/C++ & Extension Pack </td> 
     <td> Microsoft </td>
+  </tr>
+  <tr>
+    <td> CAIE Pseudocode </td>
+    <td> CreatechStudio Shanghai Inc. </td>
   </tr>
   <tr>
     <td> CMake Tools </td>
@@ -37,7 +41,7 @@
     <td> Alexander </td>
   </tr>
   <tr>
-    <td> Indent Rainbow Palettes </td> <!-- in-built palettes for indent-rainbow -->
+    <td> Evondev - Indent Rainbow Palettes </td> <!-- in-built palettes for indent-rainbow -->
     <td> evondev </td>
   </tr>
   <tr>
