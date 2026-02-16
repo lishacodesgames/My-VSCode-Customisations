@@ -25,10 +25,6 @@
     <td> CreatechStudio Shanghai Inc. </td>
   </tr>
   <tr>
-    <td> CMake </td>
-    <td> twxs </td>
-  </tr>
-  <tr>
     <td> CMake Tools </td>
     <td> Microsoft </td>
   </tr>
