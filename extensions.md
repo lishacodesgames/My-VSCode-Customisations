@@ -25,6 +25,10 @@
     <td> CreatechStudio Shanghai Inc. </td>
   </tr>
   <tr>
+    <td> CMake </td>
+    <td> twxs </td>
+  </tr>
+  <tr>
     <td> CMake Tools </td>
     <td> Microsoft </td>
   </tr>
@@ -51,6 +55,10 @@
   <tr>
     <td> GitHub Copilot Chat </td> <!-- copilot -->
     <td> GitHub </td>
+  </tr>
+  <tr>
+    <td> GitLens – Git supercharged </td> <!-- git blame -->
+    <td> GitKraken </td>
   </tr>
   <tr>
     <td> HTML CSS Support </td> 
