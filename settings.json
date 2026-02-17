@@ -1,166 +1,174 @@
 {
-   // autosave
-  "files.autoSave": "afterDelay",
-   // chat
-  "chat.agent.enabled": false,
-  "chat.commandCenter.enabled": false,
-  "chat.notifyWindowOnConfirmation": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "cpp": false
-  },
-   // debug
-  "debug.onTaskErrors": "debugAnyway",
-   // terminal
-  "terminal.integrated.minimumContrastRatio": 1,
-  "workbench.colorCustomizations": {
-    "terminal.foreground": "#33827a",
-    "terminal.ansiBrightYellow": "#3d5a4c",
-    "terminal.ansiBrightRed": "#c43030",
-    "terminal.ansiMagenta": "#93bfc5",
-    "terminal.ansiCyan": "#497070"
-  },
-  "terminal.integrated.stickyScroll.enabled": false,
-   // c++ format 
-  "C_Cpp.clang_format_fallbackStyle": "Google",
-  "C_Cpp.vcFormat.indent.preserveComments": true,
-   // code runner
-  "code-runner.runInTerminal": true,
-  "code-runner.customCommand": "clang++ snake1.cpp -L lib/ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL lib/libraylib.a -o snake1 && ./snake1",
-   // vscode appearance
-  "editor.accessibilitySupport": "on",
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.guides.indentation": false,
-  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
-  "editor.minimap.size": "fit",
-  "editor.renderLineHighlight": "all",
-  "editor.tabSize": 3,
-  "editor.wordWrap": "on",
-  "workbench.activityBar.location": "top",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "After Dark",
-  "workbench.iconTheme": "vscode-icons",
-  // editor colors
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      { // anything in quotes
-        "scope": ["string.quoted.double", "string.quoted.single"],
-        "settings": {
-          "foreground": "#95d7ca"
-        }
-      },
-      { // operators like +, -, ==, etc
-        "scope": ["keyword.operator", "punctuation.separator"],
-        "settings": {
-          "foreground": "#4a8bbc"
-        }
-      },
-      { // numeric constants
-        "scope": ["constant.character", "constant.numeric"],
-        "settings": {
-          "foreground": "#5bad6e"
-        }
-      }
-    ]
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "rules": {
-      "property": { // class members
-        "foreground": "#eaa3a3",
-        "fontStyle": "italic"
-      },
-      "method": "#fb8c8c", // class methods
-      "operator": "#4a8bbc", // operators like +, -, ==, etc
-      "variable": { // local variables
-        "foreground": "#6cbde5"
-      }
-    }
-  },
-  // extension: Better Comments
-  "better-comments.highlightPlainText": true,
-  "better-comments.tags": [
-    {
-      //!
-      "tag": "!",
-      "color": "#D94359",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": true
-    },
-    {
-      //?
-      "tag": "?",
-      "color": "#6372CF",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": true
-    },
-    {
-      // //
-      "tag": "//",
-      "color": "#C586A3",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": true
-    },
-    {
-      // todo
-      "tag": "todo",
-      "color": "#EBD23D",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": true
-    },
-    {
-      //*
-      "tag": "*",
-      "color": "#98C379",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": true
-    },
-    {
-      // ~~
-      "tag": "~~",
-      "color": "#8A5C78",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "italic": true
-    }
-  ],
-  // extension: indent-rainbow
-  "indentRainbow.colors": [
-    "#82AAFF66",
-    "#C792EA66",
-    "#F78C6C61",
-    "#FFCB6B61",
-    "#C3E88D66",
-    "#89DDFF66"
-  ],
-  "indentRainbow.errorColor": "#00000022",
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.lightIndicatorStyleLineWidth": 1.25,
-  "indentRainbow.ignoreErrorLanguages": ["markdown"],
-  // extension: colorize
-  "colorize.languages": [
-    "css",
-    "json",
-    "cpp"
-  ],
-  "colorize.hide_current_line_decorations": false
+	// autosave
+	"files.autoSave": "afterDelay",
+	// chat
+	"chat.agent.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"chat.notifyWindowOnConfirmation": false,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false,
+		"cpp": false,
+	},
+	// debug
+	"debug.onTaskErrors": "debugAnyway",
+	// terminal
+	"terminal.integrated.minimumContrastRatio": 1,
+	"workbench.colorCustomizations": {
+		"terminal.foreground": "#33827a",
+		"terminal.ansiBrightYellow": "#3d5a4c",
+		"terminal.ansiBrightRed": "#c43030",
+		"terminal.ansiMagenta": "#93bfc5",
+		"terminal.ansiCyan": "#497070",
+	},
+	"terminal.integrated.stickyScroll.enabled": false,
+	// c++ format
+	"C_Cpp.clang_format_fallbackStyle": "Google",
+	"C_Cpp.vcFormat.indent.preserveComments": true,
+	// code runner
+	"code-runner.runInTerminal": true,
+	"code-runner.customCommand": "clang++ snake1.cpp -L lib/ -framework CoreVideo -framework IOKit -framework Cocoa -framework GLUT -framework OpenGL lib/libraylib.a -o snake1 && ./snake1",
+	// vscode appearance
+	"editor.accessibilitySupport": "on",
+	"editor.cursorBlinking": "expand",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.guides.indentation": false,
+	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
+	"editor.minimap.size": "fit",
+	"editor.renderLineHighlight": "all",
+	"editor.tabSize": 3,
+	"editor.wordWrap": "on",
+	"workbench.activityBar.location": "top",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.colorTheme": "After Dark",
+	"workbench.iconTheme": "vscode-icons",
+	// editor colors
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				// anything in quotes
+				"scope": ["string.quoted.double", "string.quoted.single"],
+				"settings": {
+					"foreground": "#95d7ca",
+				},
+			},
+			{
+				// operators like +, -, ==, etc
+				"scope": ["keyword.operator", "punctuation.separator"],
+				"settings": {
+					"foreground": "#4a8bbc",
+				},
+			},
+			{
+				// numeric constants
+				"scope": ["constant.character", "constant.numeric"],
+				"settings": {
+					"foreground": "#5bad6e",
+				},
+			},
+		],
+	},
+	"editor.semanticTokenColorCustomizations": {
+		"rules": {
+			"namespace": "#ff5100",
+			"property": { // class members
+				"foreground": "#eaa3a3",
+				"fontStyle": "italic",
+			},
+			"method": "#fb8c8c", // class methods
+			"operator": "#477aa1", // operators like +, -, ==, etc
+			"variable": {
+				// local variables
+				"foreground": "#6cbde5",
+			},
+		},
+	},
+	// extension: Better Comments
+	"better-comments.highlightPlainText": true,
+	"better-comments.tags": [
+		{
+			//!
+			"tag": "!",
+			"color": "#D94359",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true,
+		},
+		{
+			//?
+			"tag": "?",
+			"color": "#6372CF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true,
+		},
+		{
+			// //
+			"tag": "//",
+			"color": "#C586A3",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true,
+		},
+		{
+			// todo
+			"tag": "todo",
+			"color": "#EBD23D",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true,
+		},
+		{
+			//*
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true,
+		},
+		{
+			// ~~
+			"tag": "~~",
+			"color": "#8A5C78",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"italic": true,
+		},
+	],
+	// extension: indent-rainbow
+	"indentRainbow.colors": [
+		"#82AAFF66",
+		"#C792EA66",
+		"#F78C6C61",
+		"#FFCB6B61",
+		"#C3E88D66",
+		"#89DDFF66",
+	],
+	"indentRainbow.errorColor": "#00000022",
+	"indentRainbow.indicatorStyle": "light",
+	"indentRainbow.lightIndicatorStyleLineWidth": 1.25,
+	"indentRainbow.ignoreErrorLanguages": ["markdown"],
+	// extension: colorize
+	"colorize.languages": ["css", "json", "jsonc", "cpp"],
+	"colorize.hide_current_line_decorations": false,
+
+	// extension: prettier
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+	},
+	"prettier.tabWidth": 3,
+	"prettier.useTabs": true,
 }
