@@ -1,4 +1,4 @@
-## All my extensions 
+# All my VSCode Extensions 
 <table>
   <tr>
     <th> Extension </th>
@@ -35,6 +35,10 @@
   <tr>
     <td> colorize </td> <!-- color hex codes -->
     <td> kamikillerto </td>
+  </tr>
+  <tr>
+    <td> CSS Nesting Syntax Highlighting </td>
+    <td> Jacob Cassidy </td>
   </tr>
   <tr>
     <td> Error Lens </td> <!-- highlight errors and show error message inline -->
