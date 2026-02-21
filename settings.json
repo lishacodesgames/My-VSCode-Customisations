@@ -40,6 +40,7 @@
 	"editor.renderLineHighlight": "all",
 	"editor.tabSize": 3,
 	"editor.wordWrap": "on",
+	"editor.wrappingIndent": "indent",
 	"workbench.activityBar.location": "top",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.colorTheme": "After Dark",
