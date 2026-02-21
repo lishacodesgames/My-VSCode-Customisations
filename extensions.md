@@ -13,6 +13,10 @@
     <td> Yurii Zaporozhchenko </td>
   </tr>
   <tr>
+    <td> Background </td>
+    <td> Katsute </td>
+  </tr>
+  <tr>
     <td> Better Comments </td> <!-- Colored comments -->
     <td> Aaron Bond </td>
   </tr>
