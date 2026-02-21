@@ -42,19 +42,30 @@
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.guides.indentation": false,
 	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
-	"editor.minimap.size": "fit",
-	"editor.renderLineHighlight": "all",
+	"editor.minimap.size": "proportional",
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.showSlider": "always",
+	"editor.renderLineHighlight": "gutter",
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.selectionHighlightMultiline": true,
 	"editor.tabSize": 3,
 	"editor.wordWrap": "on",
 	"editor.wrappingIndent": "deepIndent",
 	"workbench.activityBar.location": "top",
 	"workbench.editor.empty.hint": "hidden",
-	"workbench.colorTheme": "After Dark",
+	"workbench.colorTheme": "Kimbie Dark",
 	"workbench.iconTheme": "vscode-icons",
 
 	// editor colors
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
+			{
+				"scope": "comment",
+				"settings": {
+					"foreground": "#653F31",
+					"fontStyle": "italic bold"
+				}
+			},
 			{ // anything in quotes
 				"scope": ["string.quoted.double", "string.quoted.single"],
 				"settings": {
@@ -103,10 +114,16 @@
 		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/vscode-sidebar-background-3.jpg",
 		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/vscode-sidebar-background-4.jpg"
 	],
-	"background.backgroundOpacity": [ 0.008, 0.008, 0.008, 0.008],
+	"background.backgroundOpacity": [ 0.05, 0.07, 0.17, 0.05],
 	"background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
 	"background.autoInstall": true,
-	"background.backgroundChangeTime": [1800, 1800, 1800, 1800], // 30 mins
+	"background.backgroundChangeTime": [1800, 1800, 900, 1800], // 30 mins
+	"background.backgroundAlignment": [
+		"Center Center",
+		"Center Center",
+		"Top Left",
+		"Center Center"
+	],
 
 	// extension: Better Comments
 	"better-comments.highlightPlainText": true,
@@ -195,5 +212,5 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 	},
 	"prettier.tabWidth": 3,
-	"prettier.useTabs": true
+	"prettier.useTabs": true,
 }
