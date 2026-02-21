@@ -1,0 +1,119 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+x",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalHasBeenCreated || terminalProcessSupported"
+    },
+    {
+        "key": "alt+x",
+        "command": "workbench.output.action.clearOutput"
+    },
+    {
+        "key": "alt+capslock alt+capslock",
+        "command": "code-runner.run"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-code-runner.run"
+    },
+    {
+        "key": "ctrl+l ctrl+d",
+        "command": "notebook.selectAllFindMatches",
+        "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-notebook.selectAllFindMatches",
+        "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+l ctrl+d",
+        "command": "selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+l ctrl+d",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+capslock ctrl+capslock",
+        "command": "code-runner.stop"
+    },
+    {
+        "key": "ctrl+alt+m",
+        "command": "-code-runner.stop"
+    },
+    {
+        "key": "ctrl+alt+x",
+        "command": "workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+alt+x",
+        "command": "workbench.action.terminal.killAll"
+    },
+    {
+        "key": "ctrl+alt+x",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+l ctrl+p",
+        "command": "livePreview.start.internalPreview.atFile"
+    },
+    {
+        "key": "alt+l alt+l",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+g ctrl+l",
+        "command": "extension.liveServer.goOnline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l alt+o",
+        "command": "-extension.liveServer.goOnline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g alt+l",
+        "command": "extension.liveServer.goOffline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+l alt+c",
+        "command": "-extension.liveServer.goOffline",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s alt+v",
+        "command": "cmake.projectStatus.setVariant"
+    }
+]
