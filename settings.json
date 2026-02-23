@@ -21,6 +21,8 @@
 	// terminal
 	"terminal.integrated.minimumContrastRatio": 1,
 	"workbench.colorCustomizations": {
+		"editor.foldBackground": "#3a2a1f55",
+
 		"terminal.foreground": "#33827a",
 		"terminal.ansiBrightYellow": "#3d5a4c",
 		"terminal.ansiBrightRed": "#c43030",
@@ -213,4 +215,10 @@
 	},
 	"prettier.tabWidth": 3,
 	"prettier.useTabs": true,
+	"[cpp]": {
+		"editor.wordBasedSuggestions": "off",
+		"editor.semanticHighlighting.enabled": true,
+		"editor.stickyScroll.defaultModel": "foldingProviderModel",
+		"editor.suggest.insertMode": "replace"
+	},
 }
