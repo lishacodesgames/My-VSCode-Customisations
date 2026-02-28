@@ -105,20 +105,18 @@
 
 	// extension: background
 	"background.editorBackgrounds": [
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-1.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-2.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-3.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-4.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-5.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-editor-background-6.jpg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-1.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-2.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-3.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-4.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-5.jpeg"
 	],
 	"background.sidebarBackgrounds": [
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-1.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-2.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-3.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-4.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-5.jpg",
-		"file:///C:/Users/patil/OneDrive/Desktop/Pictures/VSCode_Backgrounds/vscode-sidebar-background-6.jpg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-1.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-2.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-3.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-4.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-5.jpeg"
 	],
 	"background.backgroundOpacity": [ 0.05, 0.07, 0.17, 0.05],
 	"background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
@@ -225,4 +223,8 @@
 		"editor.stickyScroll.defaultModel": "foldingProviderModel",
 		"editor.suggest.insertMode": "replace"
 	},
+	"background.useInvertedOpacity": true,
+	"C_Cpp.default.compilerPath": "/usr/bin/g++",
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
 }
