@@ -118,7 +118,15 @@
 		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-4.jpeg",
 		"/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-5.jpeg"
 	],
-	"background.backgroundOpacity": [ 0.05, 0.07, 0.17, 0.05],
+	"background.panelBackgrounds": [
+		"/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-1.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-2.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-3.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-4.jpeg",
+		"/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-5.jpeg"
+	],
+	"background.useInvertedOpacity": false,
+	"background.backgroundOpacity": [ 0.05, 0.07, 0.17, 0.05 ],
 	"background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
 	"background.autoInstall": true,
 	"background.backgroundChangeTime": [1800, 1200, 600, 1800], // 30 mins
@@ -223,7 +231,6 @@
 		"editor.stickyScroll.defaultModel": "foldingProviderModel",
 		"editor.suggest.insertMode": "replace"
 	},
-	"background.useInvertedOpacity": true,
 	"C_Cpp.default.compilerPath": "/usr/bin/g++",
 	"gitlens.ai.model": "vscode",
 	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
