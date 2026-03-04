@@ -81,6 +81,10 @@
     <td> Ritwick Dey </td>
   </tr>
   <tr>
+    <td> Markdown All in One </td>
+    <td> Yu Zhang </td>
+  </tr>
+  <tr>
     <td> Multiple cursor case preserve </td> <!-- preserve case when editing with multiple curors -->
     <td> Cardinal90 </td>
   </tr>
