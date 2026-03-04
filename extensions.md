@@ -33,6 +33,10 @@
     <td> Microsoft </td>
   </tr>
   <tr>
+    <td> CodeRabbit </td>
+    <td> CodeRabbit Inc. </td>
+  </tr>
+  <tr>
     <td> Code Runner </td> <!-- Run code with button/shortcut -->
     <td> Jun Han </td>
   </tr>
