@@ -1,119 +1,149 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "alt+x",
-        "command": "workbench.action.terminal.clear",
-        "when": "terminalHasBeenCreated || terminalProcessSupported"
-    },
-    {
-        "key": "alt+x",
-        "command": "workbench.output.action.clearOutput"
-    },
-    {
-        "key": "alt+capslock alt+capslock",
-        "command": "code-runner.run"
-    },
-    {
-        "key": "ctrl+alt+n",
-        "command": "-code-runner.run"
-    },
-    {
-        "key": "ctrl+l ctrl+d",
-        "command": "notebook.selectAllFindMatches",
-        "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "-notebook.selectAllFindMatches",
-        "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
-    },
-    {
-        "key": "ctrl+l ctrl+d",
-        "command": "selectAllSearchEditorMatches",
-        "when": "inSearchEditor"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "-selectAllSearchEditorMatches",
-        "when": "inSearchEditor"
-    },
-    {
-        "key": "ctrl+l ctrl+d",
-        "command": "editor.action.selectHighlights",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "-editor.action.selectHighlights",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+capslock ctrl+capslock",
-        "command": "code-runner.stop"
-    },
-    {
-        "key": "ctrl+alt+m",
-        "command": "-code-runner.stop"
-    },
-    {
-        "key": "ctrl+alt+x",
-        "command": "workbench.action.terminal.killEditor",
-        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.terminal.killEditor",
-        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+f4",
-        "command": "-workbench.action.terminal.killEditor",
-        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+alt+x",
-        "command": "workbench.action.terminal.killAll"
-    },
-    {
-        "key": "ctrl+alt+x",
-        "command": "workbench.action.terminal.kill"
-    },
-    {
-        "key": "ctrl+l ctrl+p",
-        "command": "livePreview.start.internalPreview.atFile"
-    },
-    {
-        "key": "alt+l alt+l",
-        "command": "expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+g ctrl+l",
-        "command": "extension.liveServer.goOnline",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+l alt+o",
-        "command": "-extension.liveServer.goOnline",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+g alt+l",
-        "command": "extension.liveServer.goOffline",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+l alt+c",
-        "command": "-extension.liveServer.goOffline",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+s alt+v",
-        "command": "cmake.projectStatus.setVariant"
-    }
+   {
+      "key": "ctrl+alt+down",
+      "command": "editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "-editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "notebook.cell.copyDown",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "-notebook.cell.copyDown",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+shift+alt+down",
+      "command": "-editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+alt+up",
+      "command": "editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "shift+alt+up",
+      "command": "-editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "shift+alt+up",
+      "command": "notebook.cell.copyUp",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "shift+alt+up",
+      "command": "-notebook.cell.copyUp",
+      "when": "notebookEditorFocused && !inputFocus"
+   },
+   {
+      "key": "shift+alt+up",
+      "command": "editor.action.copyLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "ctrl+shift+alt+up",
+      "command": "-editor.action.copyLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+   },
+   {
+      "key": "shift+alt+down",
+      "command": "markdown.extension.onCopyLineDown",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   },
+   {
+      "key": "ctrl+shift+alt+down",
+      "command": "-markdown.extension.onCopyLineDown",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   },
+   {
+      "key": "shift+alt+up",
+      "command": "markdown.extension.onCopyLineUp",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   },
+   {
+      "key": "ctrl+shift+alt+up",
+      "command": "-markdown.extension.onCopyLineUp",
+      "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+   },
+   {
+      "key": "ctrl+alt+down",
+      "command": "-workbench.action.chat.nextUserPrompt",
+      "when": "chatIsEnabled && inChat"
+   },
+   {
+      "key": "ctrl+alt+down",
+      "command": "-quickInput.nextSeparator",
+      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+   },
+   {
+      "key": "ctrl+alt+up",
+      "command": "-quickInput.previousSeparator",
+      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+   },
+   {
+      "key": "ctrl+alt+up",
+      "command": "-workbench.action.chat.previousUserPrompt",
+      "when": "chatIsEnabled && inChat"
+   },
+   {
+      "key": "ctrl+shift+up",
+      "command": "-editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "ctrl+shift+down",
+      "command": "-editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "alt+x",
+      "command": "workbench.action.terminal.clear",
+      "when": "terminalHasBeenCreated || terminalProcessSupported"
+   },
+   {
+      "key": "alt+x",
+      "command": "workbench.output.action.clearOutput"
+   },
+   {
+      "key": "ctrl+l ctrl+d",
+      "command": "notebook.selectAllFindMatches",
+      "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+   },
+   {
+      "key": "ctrl+alt+x",
+      "command": "workbench.action.terminal.killAll"
+   },
+   {
+      "key": "ctrl+alt+x",
+      "command": "workbench.action.terminal.kill"
+   },
+   {
+      "key": "alt+l alt+o",
+      "command": "-extension.liveServer.goOnline",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "alt+l alt+c",
+      "command": "-extension.liveServer.goOffline",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "alt+s alt+v",
+      "command": "cmake.projectStatus.setVariant"
+   }
 ]
