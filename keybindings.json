@@ -142,8 +142,18 @@
       "command": "-extension.liveServer.goOffline",
       "when": "editorTextFocus"
    },
+
+   // cmake
    {
-      "key": "alt+s alt+v",
-      "command": "cmake.projectStatus.setVariant"
+      "key": "alt+c alt+p",
+      "command": "cmake.selectConfigurePreset"
+   },
+   {
+      "key": "alt+b alt+p",
+      "command": "cmake.selectBuildPreset"
+   },
+   {
+      "key": "alt+r alt+p",
+      "command": "cmake.projectStatus.launchTarget"
    }
 ]
