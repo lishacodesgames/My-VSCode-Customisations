@@ -105,6 +105,10 @@
     <td> Microsoft </td>
   </tr>
   <tr>
+    <td> Vim Pre Shortcut Keys </td>
+    <td> zykowal </td>
+  </tr>
+  <tr>
     <td> vscode-icons </td> <!-- prettier file icons -->
     <td> VSCode Icons Team </td>
   </tr>
