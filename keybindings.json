@@ -149,11 +149,13 @@
       "command": "cmake.selectConfigurePreset"
    },
    {
-      "key": "alt+b alt+p",
-      "command": "cmake.selectBuildPreset"
-   },
-   {
       "key": "alt+r alt+p",
       "command": "cmake.projectStatus.launchTarget"
+   },
+
+   // vim pre shortcut keys
+   {
+      "key": "alt+v",
+      "command": "toggleVim"
    }
 ]
