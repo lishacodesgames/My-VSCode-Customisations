@@ -1,5 +1,23 @@
 // Place your key bindings in this file to override the defaults
 [
+   // quickInput
+   {
+      "key": "ctrl+alt+down",
+      "command": "-quickInput.nextSeparator",
+      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+   },
+   {
+      "key": "ctrl+alt+up",
+      "command": "-quickInput.previousSeparator",
+      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+   },
+
+   // editor
+   {
+      "key": "ctrl+l ctrl+d",
+      "command": "notebook.selectAllFindMatches",
+      "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+   },
    {
       "key": "ctrl+alt+down",
       "command": "editor.action.insertCursorBelow",
@@ -61,6 +79,51 @@
       "when": "editorTextFocus && !editorReadonly"
    },
    {
+      "key": "ctrl+shift+up",
+      "command": "-editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+   },
+   {
+      "key": "ctrl+shift+down",
+      "command": "-editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+   },
+
+   // workbench actions
+   {
+      "key": "alt+j",
+      "command": "workbench.action.togglePanel"
+   },
+   {
+      "key": "ctrl+alt+x",
+      "command": "workbench.action.terminal.killAll"
+   },
+   {
+      "key": "ctrl+alt+x",
+      "command": "workbench.action.terminal.kill"
+   },
+   {
+      "key": "alt+x",
+      "command": "workbench.action.terminal.clear",
+      "when": "terminalHasBeenCreated || terminalProcessSupported"
+   },
+   {
+      "key": "alt+x",
+      "command": "workbench.output.action.clearOutput"
+   },
+   {
+      "key": "ctrl+alt+up",
+      "command": "-workbench.action.chat.previousUserPrompt",
+      "when": "chatIsEnabled && inChat"
+   },
+   {
+      "key": "ctrl+alt+down",
+      "command": "-workbench.action.chat.nextUserPrompt",
+      "when": "chatIsEnabled && inChat"
+   },
+
+   // extension: markdown
+   {
       "key": "shift+alt+down",
       "command": "markdown.extension.onCopyLineDown",
       "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
@@ -80,58 +143,24 @@
       "command": "-markdown.extension.onCopyLineUp",
       "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
    },
+
+   // extension: cmake
    {
-      "key": "ctrl+alt+down",
-      "command": "-workbench.action.chat.nextUserPrompt",
-      "when": "chatIsEnabled && inChat"
+      "key": "alt+c alt+p",
+      "command": "cmake.selectConfigurePreset"
    },
    {
-      "key": "ctrl+alt+down",
-      "command": "-quickInput.nextSeparator",
-      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+      "key": "alt+r alt+p",
+      "command": "cmake.projectStatus.launchTarget"
    },
+
+   // extension: vim pre shortcut keys
    {
-      "key": "ctrl+alt+up",
-      "command": "-quickInput.previousSeparator",
-      "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+      "key": "alt+v",
+      "command": "toggleVim"
    },
-   {
-      "key": "ctrl+alt+up",
-      "command": "-workbench.action.chat.previousUserPrompt",
-      "when": "chatIsEnabled && inChat"
-   },
-   {
-      "key": "ctrl+shift+up",
-      "command": "-editor.action.insertCursorAbove",
-      "when": "editorTextFocus"
-   },
-   {
-      "key": "ctrl+shift+down",
-      "command": "-editor.action.insertCursorBelow",
-      "when": "editorTextFocus"
-   },
-   {
-      "key": "alt+x",
-      "command": "workbench.action.terminal.clear",
-      "when": "terminalHasBeenCreated || terminalProcessSupported"
-   },
-   {
-      "key": "alt+x",
-      "command": "workbench.output.action.clearOutput"
-   },
-   {
-      "key": "ctrl+l ctrl+d",
-      "command": "notebook.selectAllFindMatches",
-      "when": "config.notebook.multiCursor.enabled && notebookFindWidgetFocused || config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
-   },
-   {
-      "key": "ctrl+alt+x",
-      "command": "workbench.action.terminal.killAll"
-   },
-   {
-      "key": "ctrl+alt+x",
-      "command": "workbench.action.terminal.kill"
-   },
+
+   // extension: live server
    {
       "key": "alt+l alt+o",
       "command": "-extension.liveServer.goOnline",
@@ -142,20 +171,4 @@
       "command": "-extension.liveServer.goOffline",
       "when": "editorTextFocus"
    },
-
-   // cmake
-   {
-      "key": "alt+c alt+p",
-      "command": "cmake.selectConfigurePreset"
-   },
-   {
-      "key": "alt+r alt+p",
-      "command": "cmake.projectStatus.launchTarget"
-   },
-
-   // vim pre shortcut keys
-   {
-      "key": "alt+v",
-      "command": "toggleVim"
-   }
 ]
