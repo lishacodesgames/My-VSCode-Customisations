@@ -121,6 +121,22 @@
       "command": "-workbench.action.chat.nextUserPrompt",
       "when": "chatIsEnabled && inChat"
    },
+   {
+      "key": "alt+b",
+      "command": "workbench.action.toggleSidebarVisibility"
+   },
+   {
+      "key": "ctrl+b",
+      "command": "-workbench.action.toggleSidebarVisibility"
+   },
+   {
+      "key": "ctrl+shift+p",
+      "command": "workbench.action.showCommands"
+   },
+   {
+      "key": "f1",
+      "command": "-workbench.action.showCommands"
+   },
 
    // extension: markdown
    {
@@ -170,5 +186,12 @@
       "key": "alt+l alt+c",
       "command": "-extension.liveServer.goOffline",
       "when": "editorTextFocus"
+   },
+
+   // extension: gitlens
+   {
+      "key": "alt+b",
+      "command": "-gitlens.toggleFileBlame:key",
+      "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
    },
 ]
