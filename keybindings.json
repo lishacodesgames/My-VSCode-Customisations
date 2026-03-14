@@ -137,6 +137,39 @@
       "key": "f1",
       "command": "-workbench.action.showCommands"
    },
+   {
+      "key": "ctrl+r",
+      "command": "-workbench.action.terminal.chat.rerunRequest",
+      "when": "chatIsEnabled && terminalChatFocus && terminalHasBeenCreated && !terminalChatActiveRequest || chatIsEnabled && terminalChatFocus && terminalProcessSupported && !terminalChatActiveRequest"
+   },
+   {
+      "key": "ctrl+space ctrl+r",
+      "command": "workbench.action.browser.reload",
+      "when": "browserFocused && activeEditor == 'workbench.editor.browser'"
+   },
+   {
+      "key": "ctrl+r",
+      "command": "-workbench.action.browser.reload",
+      "when": "browserFocused && activeEditor == 'workbench.editor.browser'"
+   },
+   {
+      "key": "ctrl+space ctrl+r",
+      "command": "workbench.action.reloadWindow",
+      "when": "isDevelopment"
+   },
+   {
+      "key": "ctrl+r",
+      "command": "-workbench.action.reloadWindow",
+      "when": "isDevelopment"
+   },
+   {
+      "key": "alt+o alt+f",
+      "command": "workbench.action.openRecent"
+   },
+   {
+      "key": "ctrl+r",
+      "command": "-workbench.action.openRecent"
+   },
 
    // extension: markdown
    {
