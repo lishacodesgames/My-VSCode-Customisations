@@ -22,6 +22,7 @@
 		"C_Cpp.clang_format_fallbackStyle": "Google",
 		"C_Cpp.default.compilerPath": "/usr/bin/g++",
 		"C_Cpp.vcFormat.indent.preserveComments": true,
+   		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 
 		// code runner
 		"code-runner.runInTerminal": true,
