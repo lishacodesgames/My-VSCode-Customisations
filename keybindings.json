@@ -208,6 +208,11 @@
       "key": "alt+v",
       "command": "toggleVim"
    },
+   {
+      "key": "escape",
+      "command": "removeSecondaryCursors",
+      "when": "editorHasMultipleSelections && textInputFocus && vim.active && vim.mode == 'Normal'"
+   },
 
    // extension: live server
    {
