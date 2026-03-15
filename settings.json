@@ -27,12 +27,6 @@
 	"terminal.integrated.minimumContrastRatio": 1,
 	"workbench.colorCustomizations": {
 		"editor.foldBackground": "#3a2a1f55",
-
-		"terminal.foreground": "#33827a",
-		"terminal.ansiBrightYellow": "#3d5a4c",
-		"terminal.ansiBrightRed": "#c43030",
-		"terminal.ansiMagenta": "#93bfc5",
-		"terminal.ansiCyan": "#497070",
 	},
 	"terminal.integrated.stickyScroll.enabled": false,
 
@@ -206,6 +200,7 @@
 	// extension: gitlens
 	"gitlens.ai.model": "vscode",
 	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"gitlens.graph.layout": "editor",
 
 	// extension: indent-rainbow
 	"indentRainbow.colors": [
@@ -240,7 +235,7 @@
 		"<C-j>": false,
 		"<C-k>": false,
 		"<C-p>": false,
-		"<C-d>": true,
+		"<C-d>": false,
 		":": true,
    	";": true
 	},
@@ -254,5 +249,5 @@
 			"before": [";"],
 			"after": [":"],
 		}
-	]	
+	]
 }
