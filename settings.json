@@ -234,6 +234,7 @@
       "<C-k>": false,
       "<C-p>": false,
       "<C-d>": false,
+      "<C-f>": false,
       ":": true,
       ";": true
    },
