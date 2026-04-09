@@ -252,7 +252,7 @@
       {
          "before": ["k"],
          "after": ["g", "k"]
-      },
+      }
    ],
    "vim.normalModeKeyBindingsNonRecursive": [
       { // remap ; to : for easy access (but not in command mode)
@@ -264,10 +264,6 @@
       {
          "before": ["j", "k"],
          "after": ["<Esc>"]
-      },
-      {
-         "before": ["j", "j"],
-         "after": ["<Esc>"]
       }
    ],
    "vim.visualModeKeyBindingsNonRecursive": [
@@ -275,5 +271,9 @@
          "before": [";"],
          "after": [":"],
       },
+      {
+         "before": ["j", "k"],
+         "after": ["<Esc>"]
+      }
    ]
 }
