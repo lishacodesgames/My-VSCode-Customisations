@@ -255,20 +255,10 @@
       },
    ],
    "vim.normalModeKeyBindingsNonRecursive": [
-      { // remap : to ; for easy access (but not in command mode)
-         "before": [":"],
-         "after": [";"],
+      { // remap ; to : for easy access (but not in command mode)
+         "before": [";"],
+         "after": [":"],
       },
-
-      // scroll up and down with <C-j>, <C-k>
-      {
-         "before": ["<C-j>"],
-         "after": ["<C-e>"]
-      },
-      {
-         "before": ["<C-k>"],
-         "after": ["<C-y>"]
-      }
    ],
    "vim.insertModeKeyBindings": [
       {
@@ -281,19 +271,9 @@
       }
    ],
    "vim.visualModeKeyBindingsNonRecursive": [
-      { // remap : to ; for easy access (but not in command mode)
-         "before": [":"],
-         "after": [";"],
+      { // remap ; to : for easy access (but not in command mode)
+         "before": [";"],
+         "after": [":"],
       },
-
-      // scroll up and down with <C-j>, <C-k>
-      {
-         "before": ["<C-j>"],
-         "after": ["<C-e>"]
-      },
-      {
-         "before": ["<C-k>"],
-         "after": ["<C-y>"]
-      }
    ]
 }
