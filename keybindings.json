@@ -233,6 +233,12 @@
       "command": "removeSecondaryCursors",
       "when": "editorHasMultipleSelections && textInputFocus && vim.active && vim.mode == 'Normal'"
    },
+   {
+      "command": "-extension.vim_ctrl+p",
+      "key": "ctrl+p",
+      "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
+   },
+
 
    // extension: live server
    {
