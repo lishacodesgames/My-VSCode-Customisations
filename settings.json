@@ -259,6 +259,10 @@
          "before": [";"],
          "after": [":"],
       },
+      { // for convenience
+         "before": ["0"],
+         "after": ["^"],
+      }
    ],
    "vim.insertModeKeyBindings": [
       {
@@ -274,6 +278,10 @@
       {
          "before": ["j", "k"],
          "after": ["<Esc>"]
+      },
+      { // for convenience
+         "before": ["0"],
+         "after": ["^"],
       }
    ]
 }
