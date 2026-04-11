@@ -229,6 +229,7 @@
    "prettier.useTabs": true,
 
    // extension: vim pre shortcut keys
+   "vim.whichwrap": "b,w,h,l,<,>,[,]", // < > = arrow keys, [ ] = arrow keys in insert/replace mode
    "vim.handleKeys": {
       "<C-n>": false,
       "<C-k>": false,
@@ -243,16 +244,6 @@
          "before": ["Y"],
          "after": ["y", "$"],
       },
-
-      // move down/up by visual line instead of actual line (accounting for wrapping)
-      {
-         "before": ["j"],
-         "after": ["g", "j"]
-      },
-      {
-         "before": ["k"],
-         "after": ["g", "k"]
-      }
    ],
    "vim.normalModeKeyBindingsNonRecursive": [
       { // remap ; to : for easy access (but not in command mode)
@@ -283,5 +274,5 @@
          "before": ["0"],
          "after": ["^"],
       }
-   ]
+   ],
 }
