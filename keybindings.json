@@ -238,6 +238,11 @@
       "key": "ctrl+p",
       "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
    },
+   {
+      "key": "ctrl+p",
+      "command": "-editor.action.triggerParameterHints",
+      "when": "editorHasSignatureHelpProvider && editorTextFocus && vim.mode == 'Insert'"
+   },
 
 
    // extension: live server
@@ -278,6 +283,5 @@
       "key": "shift+f4",
       "command": "-references-view.prev",
       "when": "reference-list.hasResult && references-view.canNavigate"
-   }
-   //
+   },
 ]
