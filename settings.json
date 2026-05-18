@@ -12,7 +12,7 @@
    },
    
    // c++ format
-   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0 }",
+   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 3, ColumnLimit: 0, SpaceBeforeParens: Never, AllowShortFunctionsOnASingleLine: All, SortIncludes: false }",
    "C_Cpp.default.compilerPath": "/usr/bin/g++",
    "C_Cpp.vcFormat.indent.preserveComments": true,
    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
