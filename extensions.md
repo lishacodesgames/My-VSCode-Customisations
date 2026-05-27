@@ -1,12 +1,12 @@
-# All my VSCode Extensions 
+# All my VSCode Extensions
 <table>
   <tr>
     <th> Extension </th>
     <th> By __ </th>
   </tr>
   <tr>
-    <td> After Dark </td> <!-- Theme -->
-    <td> Simeon Kerkola </td>
+    <td> Auto Semicolon </td>
+    <td> Mohammad Yaaghubi </td>
   </tr>
   <tr>
     <td> Auto-Save on Window Change </td>
@@ -31,10 +31,6 @@
   <tr>
     <td> CMake Tools </td>
     <td> Microsoft </td>
-  </tr>
-  <tr>
-    <td> CodeRabbit </td>
-    <td> CodeRabbit Inc. </td>
   </tr>
   <tr>
     <td> Code Runner </td> <!-- Run code with button/shortcut -->
@@ -85,11 +81,11 @@
     <td> Ritwick Dey </td>
   </tr>
   <tr>
-    <td> Markdown All in One </td>
+    <td> Markdown All in One </td>v <!-- Live preview, print to html, auto completions, etc -->
     <td> Yu Zhang </td>
   </tr>
   <tr>
-    <td> Multiple cursor case preserve </td> <!-- preserve case when editing with multiple curors -->
+    <td> Multiple cursor case preserve </td> <!-- preserve case when editing with multiple cursors -->
     <td> Cardinal90 </td>
   </tr>
   <tr>
@@ -105,7 +101,11 @@
     <td> Microsoft </td>
   </tr>
   <tr>
-    <td> Vim Pre Shortcut Keys </td>
+    <td> Vim </td>
+    <td> vscodevim </td>
+  </tr>
+  <tr>
+    <td> Vim Pre Shortcut Keys </td> <!-- make vscode more like neovim -->
     <td> zykowal </td>
   </tr>
   <tr>
