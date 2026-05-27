@@ -12,7 +12,7 @@
    },
    
    // c++ format
-   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 3, ColumnLimit: 0, SpaceBeforeParens: Never, AllowShortFunctionsOnASingleLine: All, SortIncludes: false }",
+   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 3, ContinuationIndentWidth: 6, AlignAfterOpenBracket: DontAlign, Cpp11BracedListStyle: false, ColumnLimit: 0, SpaceBeforeParens: Never, AllowShortFunctionsOnASingleLine: All, SortIncludes: false }",
    "C_Cpp.default.compilerPath": "/usr/bin/g++",
    "C_Cpp.vcFormat.indent.preserveComments": true,
    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
@@ -237,7 +237,7 @@
       "<C-d>": false,
       "<C-f>": false,
       ":": true,
-      ";": true
+      ";": false
    },
    "vim.normalModeKeyBindings": [
       { // fix Y to be consistent with D and C (from cursor to end of line)
@@ -246,10 +246,6 @@
       },
    ],
    "vim.normalModeKeyBindingsNonRecursive": [
-      { // remap ; to : for easy access (but not in command mode)
-         "before": [";"],
-         "after": [":"],
-      },
       { // for convenience
          "before": ["0"],
          "after": ["^"],
@@ -262,10 +258,6 @@
       }
    ],
    "vim.visualModeKeyBindingsNonRecursive": [
-      { // remap ; to : for easy access (but not in command mode)
-         "before": [";"],
-         "after": [":"],
-      },
       {
          "before": ["j", "k"],
          "after": ["<Esc>"]
