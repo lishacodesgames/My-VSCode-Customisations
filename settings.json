@@ -78,6 +78,13 @@
                "foreground": "#5bad6e",
             },
          },
+         { // macros
+            "scope": "entity.name.function.preprocessor",
+            "settings": {
+               "foreground": "#D0C88E",
+               "fontStyle": "bold"
+            }
+         }
       ],
    },
    "editor.semanticTokenColorCustomizations": {
