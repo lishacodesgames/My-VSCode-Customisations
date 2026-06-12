@@ -35,6 +35,8 @@
    "editor.accessibilitySupport": "on",
    "editor.cursorBlinking": "expand",
    "editor.cursorSmoothCaretAnimation": "on",
+   "editor.fontLigatures": true,
+   "editor.fontFamily": "'Fira Code', Consolas, monospace",
    "editor.guides.indentation": false,
    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
    "editor.minimap.size": "proportional",
@@ -82,7 +84,6 @@
             "scope": "entity.name.function.preprocessor",
             "settings": {
                "foreground": "#D0C88E",
-               "fontStyle": "bold"
             }
          }
       ],
@@ -104,28 +105,18 @@
 
    // extension: background
    "background.editorBackgrounds": [
-      "/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-1.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-2.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-3.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-4.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-editor-bg-5.jpeg"
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/editor.png",
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/editor.gif"
    ],
    "background.sidebarBackgrounds": [
-      "/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-1.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-2.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-3.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-4.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-sidebar-bg-5.jpeg"
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/sidebar.png",
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/sidebar.gif"
    ],
    "background.panelBackgrounds": [
-      "/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-1.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-2.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-3.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-4.jpeg",
-      "/home/lishalikesmint/Pictures/VSCode/vscode-panel-bg-5.jpeg"
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.png",
+      "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.gif"
    ],
-   "background.useInvertedOpacity": false,
-   "background.backgroundOpacity": [ 0.05, 0.07, 0.17, 0.05 ],
+   "background.backgroundOpacity": [ 0.95, 0.93, 0.83, 0.95 ],
    "background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
    "background.autoInstall": true,
    "background.backgroundChangeTime": [1800, 1200, 600, 1800], // 30 mins
@@ -282,6 +273,7 @@
    // extension:cmaketools
    "cmake.configureOnEdit": false,
    "cmake.configureOnOpen": false,
+   "python.analysis.typeCheckingMode": "strict",
 
    // other
 }
