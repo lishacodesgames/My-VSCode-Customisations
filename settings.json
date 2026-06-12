@@ -18,6 +18,9 @@
    "C_Cpp.vcFormat.indent.preserveComments": true,
    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 
+   // pylance
+   "python.analysis.typeCheckingMode": "strict",
+
    // code runner
    "code-runner.runInTerminal": true,
 
@@ -116,6 +119,9 @@
       "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.png",
       "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.gif"
    ],
+   "platformSettings.platforms": {
+      "linux": { "background.useInvertedOpacity": true }
+   },
    "background.backgroundOpacity": [ 0.95, 0.93, 0.83, 0.95 ],
    "background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
    "background.autoInstall": true,
@@ -267,13 +273,7 @@
       }
    ],
 
-   // extension: ?
-   "diffEditor.ignoreTrimWhitespace": false,
-
    // extension:cmaketools
    "cmake.configureOnEdit": false,
    "cmake.configureOnOpen": false,
-   "python.analysis.typeCheckingMode": "strict",
-
-   // other
 }
