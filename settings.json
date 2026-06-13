@@ -235,6 +235,7 @@
 
    // extension: vim pre shortcut keys
    "vim.whichwrap": "b,w,h,l,<,>,[,]", // < > = arrow keys, [ ] = arrow keys in insert/replace mode
+   "vim.timeout": 200,
    "vim.handleKeys": {
       "<C-n>": false,
       "<C-k>": false,
@@ -260,7 +261,15 @@
       {
          "before": ["j", "k"],
          "after": ["<Esc>"]
-      }
+      },
+      { // quickly move right in insert mode 
+         "before": ["<leader>", "l"],
+         "after": ["<Esc>", "l", "a"]
+      },
+      { // quickly move left in insert mode 
+         "before": ["<leader>", "h"],
+         "after": ["<Esc>", "i"]
+      },
    ],
    "vim.visualModeKeyBindingsNonRecursive": [
       {
