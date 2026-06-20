@@ -8,7 +8,7 @@
    "chat.commandCenter.enabled": false,
    "chat.notifyWindowOnConfirmation": "off",
    "github.copilot.enable": {
-      "*": true,
+      "*": true
    },
    "github.copilot.nextEditSuggestions.eagerness": "low",
    
@@ -19,7 +19,12 @@
    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 
    // pylance
-   "python.analysis.typeCheckingMode": "strict",
+   "python.analysis.typeCheckingMode": "standard",
+   "python.analysis.typeEvaluation.strictDictionaryInference": true,
+   "python.analysis.typeEvaluation.strictSetInference": true,
+   "python.analysis.diagnosticSeverityOverrides": {
+      "reportConstantRedefinition": "error"
+   },
 
    // code runner
    "code-runner.runInTerminal": true,
@@ -119,9 +124,7 @@
       "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.png",
       "https://raw.githubusercontent.com/lishacodesgames/Pinterest-Board-Scraper/main/backgrounds/panel.gif"
    ],
-   "platformSettings.platforms": {
-      "linux": { "background.useInvertedOpacity": true }
-   },
+   "background.useInvertedOpacity": true,
    "background.backgroundOpacity": [ 0.95, 0.93, 0.83, 0.95 ],
    "background.backgroundSize": [ "Cover", "Cover", "Cover", "Cover" ],
    "background.autoInstall": true,
@@ -235,7 +238,6 @@
 
    // extension: vim pre shortcut keys
    "vim.whichwrap": "b,w,h,l,<,>,[,]", // < > = arrow keys, [ ] = arrow keys in insert/replace mode
-   "vim.timeout": 200,
    "vim.handleKeys": {
       "<C-n>": false,
       "<C-k>": false,
@@ -263,11 +265,11 @@
          "after": ["<Esc>"]
       },
       { // quickly move right in insert mode 
-         "before": ["<leader>", "l"],
+         "before": ["j", "l"],
          "after": ["<Esc>", "l", "a"]
       },
       { // quickly move left in insert mode 
-         "before": ["<leader>", "h"],
+         "before": ["j", "h"],
          "after": ["<Esc>", "i"]
       },
    ],
@@ -282,7 +284,10 @@
       }
    ],
 
-   // extension:cmaketools
+   // extension: cmaketools
    "cmake.configureOnEdit": false,
    "cmake.configureOnOpen": false,
+
+   // extension: gitlens
+   "gitlens.views.launchpad.files.layout": "list",
 }
