@@ -8,7 +8,8 @@
    "chat.commandCenter.enabled": false,
    "chat.notifyWindowOnConfirmation": "off",
    "github.copilot.enable": {
-      "*": true
+      "*": true,
+      "python": false
    },
    "github.copilot.nextEditSuggestions.eagerness": "low",
    
@@ -35,7 +36,7 @@
    // terminal
    "terminal.integrated.minimumContrastRatio": 1,
    "workbench.colorCustomizations": {
-      "editor.foldBackground": "#3a2a1f55",
+      "editor.foldBackground": "#3a2a1f55"
    },
    "terminal.integrated.stickyScroll.enabled": false,
 
@@ -56,6 +57,22 @@
    "editor.tabSize": 3,
    "editor.wordWrap": "on",
    "editor.wrappingIndent": "same",
+   "editor.wordBasedSuggestions": "off",
+   "editor.semanticHighlighting.enabled": true,
+   "editor.stickyScroll.defaultModel": "foldingProviderModel",
+   "editor.suggest.insertMode": "replace",
+   "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+   },
+   "[python]": {
+      "diffEditor.ignoreTrimWhitespace": false,
+      "editor.defaultColorDecorators": "never",
+      "gitlens.codeLens.symbolScopes": [
+         "!Module"
+      ],
+      "editor.formatOnType": false,
+      "editor.wordBasedSuggestions": "off"
+   },
    "workbench.activityBar.location": "top",
    "workbench.editor.empty.hint": "hidden",
    "workbench.iconTheme": "vscode-icons",
@@ -208,6 +225,7 @@
    "gitlens.ai.model": "vscode",
    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
    "gitlens.graph.layout": "editor",
+   "gitlens.views.launchpad.files.layout": "list",
 
    // extension: indent-rainbow
    "indentRainbow.colors": [
@@ -224,15 +242,6 @@
    "indentRainbow.ignoreErrorLanguages": ["markdown"],
 
    // extension: prettier
-   "[cpp]": {
-      "editor.wordBasedSuggestions": "off",
-      "editor.semanticHighlighting.enabled": true,
-      "editor.stickyScroll.defaultModel": "foldingProviderModel",
-      "editor.suggest.insertMode": "replace"
-   },
-   "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-   },
    "prettier.tabWidth": 3,
    "prettier.useTabs": true,
 
@@ -287,7 +296,4 @@
    // extension: cmaketools
    "cmake.configureOnEdit": false,
    "cmake.configureOnOpen": false,
-
-   // extension: gitlens
-   "gitlens.views.launchpad.files.layout": "list",
 }
