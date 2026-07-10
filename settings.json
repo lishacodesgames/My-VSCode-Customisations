@@ -75,57 +75,122 @@
    },
    "workbench.activityBar.location": "top",
    "workbench.editor.empty.hint": "hidden",
-   "workbench.iconTheme": "vscode-icons",
+   "workbench.iconTheme": "ayu",
+   "workbench.colorTheme": "Monokai Dimmed",
 
    // editor colors
    "editor.tokenColorCustomizations": {
-      "textMateRules": [
-         {
-            "scope": "comment",
-            "settings": {
-               "foreground": "#653F31",
-               "fontStyle": "italic bold"
+      "[Dark 2026]": { // based on C++
+         "textMateRules": [
+            {
+               "scope": "comment",
+               "settings": {
+                  "foreground": "#653F31",
+                  "fontStyle": "italic bold"
+               }
+            },
+            { // anything in quotes
+               "scope": ["string.quoted.double", "string.quoted.single"],
+               "settings": {
+                  "foreground": "#95d7ca",
+               },
+            },
+            { // operators like +, -, ==, etc
+               "scope": ["keyword.operator", "punctuation.separator"],
+               "settings": {
+                  "foreground": "#4a8bbc",
+               },
+            },
+            { // numeric constants
+               "scope": ["constant.character", "constant.numeric"],
+               "settings": {
+                  "foreground": "#5bad6e",
+               },
+            },
+            { // macros
+               "scope": "entity.name.function.preprocessor",
+               "settings": {
+                  "foreground": "#D0C88E",
+               }
             }
-         },
-         { // anything in quotes
-            "scope": ["string.quoted.double", "string.quoted.single"],
-            "settings": {
-               "foreground": "#95d7ca",
+         ],
+      },
+      "[Monokai Dimmed]": { // based on Java
+         "textMateRules": [
+				{
+					"scope": "comment",
+					"settings": {
+						"foreground": "#6d5767",
+						"fontStyle": "italic"
+					}
+				},
+            {
+               "scope": ["string.quoted.double", "string.quoted.single"],
+               "settings": {
+                  "foreground": "#E07BE0",
+               }
             },
-         },
-         { // operators like +, -, ==, etc
-            "scope": ["keyword.operator", "punctuation.separator"],
-            "settings": {
-               "foreground": "#4a8bbc",
+            { // numeric constants
+               "scope": ["constant.character", "constant.numeric"],
+               "settings": {
+                  "foreground": "#9FA4A9",
+               },
             },
-         },
-         { // numeric constants
-            "scope": ["constant.character", "constant.numeric"],
-            "settings": {
-               "foreground": "#5bad6e",
+            { // build-in types
+               "scope": ["storage.type", "support.type"],
+               "settings": {
+                  "foreground": "#F9AB55",
+               }
             },
-         },
-         { // macros
-            "scope": "entity.name.function.preprocessor",
-            "settings": {
-               "foreground": "#D0C88E",
+            { // all functions
+               "scope": ["entity.name.function", "meta.function-call"],
+               "settings": {
+                  "foreground": "#6ABEA7",
+               }
+            },
+            { // escape characters (\n \t etc.)
+               "scope": "constant.character.escape",
+               "settings": {
+                  "foreground": "#A23E48",
+                  "fontStyle": "bold"
+               }
             }
-         }
-      ],
+         ]
+      }
    },
    "editor.semanticTokenColorCustomizations": {
-      "rules": {
-         "namespace": "#ff5100",
-         "property": { // class members
-            "foreground": "#eaa3a3",
-            "fontStyle": "italic",
-         },
-         "method": "#fb8c8c", // class methods
-         "operator": "#477aa1", // operators like +, -, ==, etc
-         "variable": { // local variables
-            "foreground": "#6cbde5",
-         },
+      "[Dark 2026]": { // based on C++
+         "rules": {
+            "namespace": "#ff5100",
+            "property": { // class members
+               "foreground": "#eaa3a3",
+               "fontStyle": "italic",
+            },
+            "method": "#fb8c8c", // class methods
+            "operator": "#477aa1", // operators like +, -, ==, etc
+            "variable": { // local variables
+               "foreground": "#6cbde5",
+            },
+         }
       },
+      "[Monokai Dimmed]": { // based on Java
+         "rules": {
+            "namespace": {
+               "foreground": "#177E89",
+               "fontStyle": "italic bold"
+            },
+            "class": {
+               "foreground": "#C8C2AE",
+               "fontStyle": "italic underline"
+            },
+            "interface": {
+               "foreground": "#C8C2AE",
+               "fontStyle": "bold underline"
+            },
+            "property": "#FA7921", // class member variables
+            "variable": "#B6DC76"  // local variables
+         }
+      }
    },
 
    // extension: background
