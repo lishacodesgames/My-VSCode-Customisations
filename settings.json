@@ -180,13 +180,14 @@
                "fontStyle": "italic bold"
             },
             "class": {
-               "foreground": "#d8b2a8"
+               "foreground": "#ecafa0"
             },
             "interface": {
-               "foreground": "#d8b2a8",
+               "foreground": "#ecafa0",
                "fontStyle": "italic"
             },
             "property": "#d97a3a", // class member variables
+            "parameter": "#9bd0e8"
          }
       }
    },
