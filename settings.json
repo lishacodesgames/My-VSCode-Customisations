@@ -76,7 +76,7 @@
    "workbench.activityBar.location": "top",
    "workbench.editor.empty.hint": "hidden",
    "workbench.iconTheme": "ayu",
-   "workbench.colorTheme": "Monokai Dimmed",
+   "workbench.colorTheme": "Ayu Dark Bordered",
 
    // editor colors
    "editor.tokenColorCustomizations": {
@@ -156,6 +156,50 @@
                }
             }
          ]
+      },
+      "[Ayu Dark Bordered]": { // based on Python
+         "textMateRules": [
+            {
+               "scope": "comment",
+               "settings": {
+                  "foreground": "#466060",
+                  "fontStyle": "italic"
+               }
+            },
+            {
+               "scope": ["string.quoted.double", "string.quoted.single"],
+               "settings": {
+                  "foreground": "#F8FFE5",
+                  "fontStyle": "italic"
+               }
+            },
+            { // operators like +, -, ==, etc
+               "scope": ["keyword.operator", "punctuation.separator"],
+               "settings": {
+                  "foreground": "#CAC4CE",
+               },
+            },
+            { // numeric constants
+               "scope": ["constant.character", "constant.numeric"],
+               "settings": {
+                  "foreground": "#717568",
+               },
+            },
+            {
+               "scope": "string.quoted.docstring.multi.python",
+               "settings": {
+                  "foreground": "#466060",
+                  "fontStyle": "italic bold"
+               }
+            },
+            {
+               "scope": "keyword.control",
+               "settings": {
+                  "foreground": "#7E8D85",
+                  "fontStyle": "italic"
+               }
+            }
+         ]
       }
    },
    "editor.semanticTokenColorCustomizations": {
@@ -179,15 +223,41 @@
                "foreground": "#177E89",
                "fontStyle": "italic bold"
             },
-            "class": {
-               "foreground": "#ecafa0"
-            },
+            "class": "#ecafa0",
             "interface": {
                "foreground": "#ecafa0",
                "fontStyle": "italic"
             },
             "property": "#d97a3a", // class member variables
             "parameter": "#9bd0e8"
+         }
+      },
+      "[Ayu Dark Bordered]": {
+         "rules": {
+            "namespace": {
+               "foreground": "#A97C73",
+               "fontStyle": "underline"
+            },
+            "class": "#A6E1FA", // all types in python
+            "class.decorator": {
+               "foreground": "#B3D89C",
+               "fontStyle": "bold"
+            },
+            "variable": "#A2E8DD",
+            "variable.readonly": {
+               "foreground": "#A2E8DD",
+               "fontStyle": "italic"
+            },
+            "variable.classMember": "#B592A0",
+            "parameter": "#FFFBBD",
+            "selfParameter": {
+               "foreground": "#BCB8B1",
+               "fontStyle": "italic underline"
+            },
+            "clsParameter": {
+               "foreground": "#BCB8B1",
+               "fontStyle": "italic underline"
+            },
          }
       }
    },
