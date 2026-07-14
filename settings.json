@@ -225,9 +225,14 @@
             },
             "class": "#ecafa0",
             "interface": {
-               "foreground": "#ecafa0",
+               "foreground": "#EE937C",
                "fontStyle": "italic"
             },
+            "enum": {
+               "foreground": "#EE8A85",
+               "fontStyle": "underline"
+            },
+            "enumMember": "#8080ff",
             "property": "#d97a3a", // class member variables
             "parameter": "#9bd0e8"
          }
