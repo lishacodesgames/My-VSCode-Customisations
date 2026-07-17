@@ -11,7 +11,8 @@
             "CMAKE_C_STANDARD": "99",
             "CMAKE_CXX_STANDARD": "20",
             "CMAKE_CXX_STANDARD_REQUIRED": "ON",
-            "CMAKE_CXX_EXTENSIONS": "OFF"
+            "CMAKE_CXX_EXTENSIONS": "OFF",
+            "OUTFILE": "${presetName}"
          }
       },
 
@@ -20,15 +21,22 @@
          "inherits": "base",
          "cacheVariables": {
             "CMAKE_BUILD_TYPE": "Debug",
-            "_DEBUGGING": "ON"
+            "CMAKE_CXX_FLAGS": "-D_DEBUGGING -D_LOG_INFO"
+         }
+      },
+      {
+         "name": "Symbols",
+         "inherits": "base",
+         "cacheVariables": {
+            "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+            "CMAKE_CXX_FLAGS": "-D_DEBUGGING"
          }
       },
       {
          "name": "Release",
          "inherits": "base",
          "cacheVariables": {
-            "CMAKE_BUILD_TYPE": "Release",
-            "_DEBUGGING": "OFF"
+            "CMAKE_BUILD_TYPE": "Release"
          }
       }
    ],
@@ -36,6 +44,10 @@
       {
          "name": "Debug",
          "configurePreset": "Debug"
+      },
+      {
+         "name": "Symbols",
+         "configurePreset": "Symbols"
       },
       {
          "name": "Release",
