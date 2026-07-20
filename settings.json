@@ -210,6 +210,9 @@
                "foreground": "#eaa3a3",
                "fontStyle": "italic",
             },
+            "property.readonly": {
+               "fontStyle": "italic bold"
+            },
             "method": "#fb8c8c", // class methods
             "operator": "#477aa1", // operators like +, -, ==, etc
             "variable": { // local variables
@@ -224,6 +227,13 @@
                "fontStyle": "italic bold"
             },
             "class": "#ecafa0",
+            "class.abstract": {
+               "foreground": "#EE937C",
+               "fontStyle": "bold"
+            },
+            "class.static": {
+               "fontStyle": "underline"
+            },
             "interface": {
                "foreground": "#EE937C",
                "fontStyle": "italic"
@@ -234,10 +244,22 @@
             },
             "enumMember": "#8080ff",
             "property": "#d97a3a", // class member variables
+            "property.readonly": {
+               "fontStyle": "italic"
+            },
+            "property.static": {
+               "fontStyle": "underline"
+            },
+            "method.abstract": {
+               "fontStyle": "bold"
+            },
+            "method.static": {
+               "fontStyle": "underline"
+            },
             "parameter": "#9bd0e8"
          }
       },
-      "[Ayu Dark Bordered]": {
+      "[Ayu Dark Bordered]": { // based on Python
          "rules": {
             "namespace": {
                "foreground": "#A97C73",
@@ -361,6 +383,7 @@
    "colorize.hide_current_line_decorations": false,
 
    // extension: gitlens
+   "diffEditor.ignoreTrimWhitespace": false,
    "gitlens.ai.model": "vscode",
    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
    "gitlens.graph.layout": "editor",
