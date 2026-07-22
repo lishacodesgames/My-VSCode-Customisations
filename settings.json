@@ -75,8 +75,8 @@
    },
    "workbench.activityBar.location": "top",
    "workbench.editor.empty.hint": "hidden",
-   "workbench.iconTheme": "ayu",
    "workbench.colorTheme": "Ayu Dark Bordered",
+   "workbench.iconTheme": "vscode-icons",
 
    // editor colors
    "editor.tokenColorCustomizations": {
@@ -244,11 +244,14 @@
             },
             "enumMember": "#8080ff",
             "property": "#d97a3a", // class member variables
-            "property.readonly": {
+            "property.readonly": { // final
                "fontStyle": "italic"
             },
             "property.static": {
                "fontStyle": "underline"
+            },
+            "property.static.readonly": {
+               "fontStyle": "italic underline"
             },
             "method.abstract": {
                "fontStyle": "bold"
@@ -318,7 +321,7 @@
    "better-comments.highlightPlainText": true,
    "better-comments.tags": [
       {
-         //!
+         //! comment
          "tag": "!",
          "color": "#D94359",
          "strikethrough": false,
@@ -328,7 +331,7 @@
          "italic": true,
       },
       {
-         //?
+         //? comment
          "tag": "?",
          "color": "#6372CF",
          "strikethrough": false,
@@ -338,7 +341,7 @@
          "italic": true,
       },
       {
-         // //
+         // // comment
          "tag": "//",
          "color": "#C586A3",
          "strikethrough": false,
@@ -348,7 +351,7 @@
          "italic": true,
       },
       {
-         // todo
+         // todo comment
          "tag": "todo",
          "color": "#EBD23D",
          "strikethrough": false,
@@ -358,7 +361,7 @@
          "italic": true,
       },
       {
-         //*
+         //* comment
          "tag": "*",
          "color": "#98C379",
          "strikethrough": false,
@@ -368,7 +371,7 @@
          "italic": true,
       },
       {
-         // ~~
+         // ~~ comment
          "tag": "~~",
          "color": "#8A5C78",
          "strikethrough": true,
